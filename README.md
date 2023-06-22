@@ -1,2 +1,2 @@
 # math
-calculet perimetre d'un cercle
+calculer perimetre d'un cercle 
