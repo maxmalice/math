@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Calcul du périmètre d'un cercle</title>
+    <script>
+      function calculerPerimetreCercle() {
+        var rayon = parseFloat(document.getElementById("rayon").value);
+        var perimetre = 2 * Math.PI * rayon;
+        document.getElementById("resultat").innerHTML =
+          "Le périmètre du cercle est : " + perimetre.toFixed(2);
+      }
+    </script>
+  </head>
+  <body>
+    <h1>Calcul du périmètre d'un cercle</h1>
+    <label for="rayon">Rayon :</label>
+    <input type="number" id="rayon" />
+    <br />
+    <button onclick="calculerPerimetreCercle()">Calculer le périmètre</button>
+    <br />
+    <div id="resultat"></div>
+  </body>
+</html>
